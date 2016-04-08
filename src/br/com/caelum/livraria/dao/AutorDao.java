@@ -15,6 +15,7 @@ import br.com.caelum.livraria.modelo.Autor;
 
 @Stateless
 @TransactionManagement(TransactionManagementType.CONTAINER) //opcional, pq é padrão de um session bean
+//@Interceptors({LogInterceptador.class}) //Usa o interceptor nesse DAO ou atraves do ejb-jar.xml
 public class AutorDao {
 	
 	@PersistenceContext

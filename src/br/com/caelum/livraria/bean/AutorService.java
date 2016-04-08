@@ -15,9 +15,9 @@ public class AutorService {
 	@Inject
 	AutorDao dao;
 	
-	public void adiciona(Autor autor) throws LivrariaException{
+	public void adiciona(Autor autor){
 		dao.salva(autor);
-		throw new LivrariaException();
+//		throw new LivrariaException();
 	}
 	
 	public List<Autor> todosAutores(){
